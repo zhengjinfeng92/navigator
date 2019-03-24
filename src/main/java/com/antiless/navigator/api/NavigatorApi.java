@@ -17,4 +17,9 @@ public class NavigatorApi {
     public String getNavigator() throws AVException {
         return navigatorService.queryDate();
     }
+
+    @GetMapping("/")
+    public String test() throws AVException {
+        return "test";
+    }
 }
