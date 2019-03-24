@@ -1,8 +1,6 @@
 package com.antiless.navigator;
 
-import com.avos.avoscloud.AVException;
 import com.avos.avoscloud.AVOSCloud;
-import com.avos.avoscloud.AVObject;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
