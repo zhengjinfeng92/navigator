@@ -4,7 +4,6 @@ import com.antiless.navigator.service.NavigatorService;
 import com.avos.avoscloud.AVException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -17,11 +16,5 @@ public class NavigatorApi {
     @GetMapping(PRE +"/navigator")
     public String getNavigator() throws AVException {
         return navigatorService.queryDate();
-    }
-
-
-    @PostMapping(PRE +"/navigator")
-    public String saveData() throws Exception{
-        return navigatorService.saveData();
     }
 }
